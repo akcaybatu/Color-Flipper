@@ -6,22 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Flipper</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 <body>
     <div id="main">
-        <div id="content">
-            <div id="container">
-                <button id="fav-btn">Add to Favorites</button>
-                <span href="#" id="instant-color">green</span>
-                <button id="btn">Change the Color</button>  
+        <div id="container">
+            <div id="content">
+                <span href="#" id="instant-color">#000000</span>
+                <button id="fav-btn" class="button">Add to Favorites </button>
+                <button id="btn" class="button">Change the Color</button>  
             </div>
         </div>  
             <div id="fav-section">  
+                <p>Favorite Colors</p> 
                 <ul id="fav-list">
-                    <p>Favorite Colors</p>
+                                       
                 </ul>  
             </div>
         </div>
+    </div>
+    <div class="alert hide">
+        <span class="fas fa-exclamation-circle"></span>
+        <span class="msg">Color copied to the clipboard!</span>
+        <div class="close-btn">
+           <span class="fas fa-times"></span>
+        </div>
+     </div>
     <script src="app.js"></script>
 </body>
 </html>
